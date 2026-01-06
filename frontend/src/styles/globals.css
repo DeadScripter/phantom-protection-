@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .btn-primary { @apply bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded }
+  .btn-secondary { @apply bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded }
+  .btn-danger { @apply bg-red-600 hover:bg-red-700 px-4 py-2 rounded }
+  .btn-icon { @apply text-xl }
+  .input { @apply w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 }
+  .card { @apply bg-gray-800 border border-gray-700 rounded p-4 }
+  .link { @apply text-blue-400 hover:underline }
+};
+
 
 @layer base {
   body {
