@@ -10,7 +10,7 @@ export default function TwoFactor({ onSuccess }: { onSuccess: () => void }) {
     const { data } = await auth.setup2FA()
 setQr(data.qr)
 setSecret(data.base32)   // ← was secret.base32
-
+  }
 
   const verify = async () => {
     await auth.verify2FA(token)
