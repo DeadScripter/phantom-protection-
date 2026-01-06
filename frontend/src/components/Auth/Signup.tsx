@@ -13,7 +13,6 @@ export default function Signup() {
   const { signup } = useAuth()
 
   return (
-    <form onSubmit={handle} className="space-y-4">
       <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="input" required />
       <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" type="password" className="input" required />
       <div id="cf-turnstile" className="cf-turnstile" />
