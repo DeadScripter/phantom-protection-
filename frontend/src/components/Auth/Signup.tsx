@@ -24,11 +24,7 @@ export default function Signup() {
     }
   })
 
-  const handle = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!cfToken) return alert('Complete CAPTCHA')
-    await signup(email, password, cfToken)
-  }
+  
 
   return (
     <form onSubmit={handle} className="space-y-4">
