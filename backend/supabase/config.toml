@@ -1,0 +1,21 @@
+# Supabase CLI 1.172.0+
+
+project_id = "phantom-protection"
+
+[api]
+enabled = true
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[functions.get-loader]
+enabled = true
+verify_jwt = false
+
+[functions.whitelist-check]
+enabled = true
+verify_jwt = false
