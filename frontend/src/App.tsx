@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
-import NotFound from './pages/NotFound'
+import Home from './pages/Home.tsx'
+import Dashboard from './pages/dashboard.tsx'
+import NotFound from './pages/NotFound.tsx'
 import { AuthGuard } from './components/Auth/AuthGuard'
 
 export default function App() {
